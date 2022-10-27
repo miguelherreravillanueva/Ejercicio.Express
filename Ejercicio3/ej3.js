@@ -12,7 +12,7 @@ const productos = [
 ]
 
 app.get("/productos", (req, res) => {
-    res.send({ msg: "Aquí tienes los productos", results: productos });
+    res.send({ description: "Productos", results: productos });
 });
 
 app.get("/id/:id", (req, res) => {
